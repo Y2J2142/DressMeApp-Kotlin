@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DressMeApp</string>
+    <string name="dress_me_app">Dress Me App!</string>
+    <string name="wardrobe">Wardrobe</string>
+</resources>
