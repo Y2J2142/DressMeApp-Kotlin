@@ -1,7 +1,10 @@
-package com.example.y2j2142.dressmeapp
+package com.example.y2j2142.dressmeapp.activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.view.View.OnClickListener
+import android.widget.Toast
+import com.example.y2j2142.dressmeapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,7 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Example of a call to a native method
+        val onClick = OnClickListener { Toast.makeText(this, "Hi there! This is a Toast.", Toast.LENGTH_LONG).show() }
+
+
+        DressMeAppButton.setOnClickListener(onClick)
+        WardrobeButton.setOnClickListener(onClick)
     }
 
 
