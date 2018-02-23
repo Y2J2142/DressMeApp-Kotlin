@@ -1,5 +1,6 @@
 package com.example.y2j2142.dressmeapp.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View.OnClickListener
@@ -14,10 +15,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val onClick = OnClickListener { Toast.makeText(this, "Hi there! This is a Toast.", Toast.LENGTH_LONG).show() }
+        val moveToWardrobe = OnClickListener({
+            val intent = Intent(this, Wardrobe::class.java)
+            startActivity(intent)
+        })
 
-
-        DressMeAppButton.setOnClickListener(onClick)
-        WardrobeButton.setOnClickListener(onClick)
+        DressMeAppButton.setOnClickListener(null)
+        WardrobeButton.setOnClickListener(moveToWardrobe)
     }
 
 
