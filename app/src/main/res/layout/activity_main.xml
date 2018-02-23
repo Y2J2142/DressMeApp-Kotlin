@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.y2j2142.dressmeapp.activities.MainActivity"
-    android:background="#fff538">
+    android:background="@color/colorPrimary">
 
     <Button
         android:id="@+id/DressMeAppButton"
@@ -18,7 +18,7 @@
         android:background="@color/colorPrimaryDark"
         android:text="@string/dress_me_app"
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/WardrobeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -33,7 +33,7 @@
         android:background="@color/colorPrimaryDark"
         android:text="@string/wardrobe"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
