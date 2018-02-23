@@ -10,4 +10,13 @@ class Wardrobe : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wardrobe)
     }
+
+
+    companion object {
+
+        // Used to load the 'native-lib' library on application startup.
+        init {
+            System.loadLibrary("native-lib")
+        }
+    }
 }
