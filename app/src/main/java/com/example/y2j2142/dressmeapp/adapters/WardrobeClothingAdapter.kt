@@ -28,7 +28,7 @@ class WardrobeClothingAdapter(var activity: Activity, var items: MutableList<Clo
         val viewHolder: ViewHolder
         if(convertView == null)
         {
-            val inflater = activity?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            val inflater = activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             view = inflater.inflate(R.layout.clothing_adapter_row, null)
             viewHolder = ViewHolder(view)
             view?.tag = viewHolder
